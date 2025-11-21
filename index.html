@@ -9,11 +9,14 @@
             padding: 0;
             margin: 0;
             color: black;
+            gap: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
             display: flex;
             flex-direction: column;
             align-items: start;
-            gap: 10px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         img {
@@ -24,6 +27,8 @@
             padding: 15px;
             background:#EFF4F9;
             border-radius: 10px;
+            display: flex;
+            align-items: center;
         }
 
         .os a {
@@ -37,11 +42,11 @@
 </head>
 <body>
     <img style="margin-bottom: 10px;" src="update.svg" alt="апдейт">
-    <p style="display: flex;">Ваша операционная система <span id="oswhat"></span> <span id="whatitupdate"></span></p>
+    <p style="display: flex; gap: 5px;">Ваша операционная система <span id="oswhat"></span> <span id="whatitupdate"></span></p>
 
     <div class="os">
         <p>Также попробуйте новый продукт!</p>
-        <a href="">Гооо!!!</a>
+        <a href="https://ladnoanet.github.io/ShindowsLL/">Гооо!!!</a>
     </div>
 
     <script>
