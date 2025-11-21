@@ -1,1 +1,57 @@
-<h1>Пример даундейта</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>даундейт</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        img {
+            height: 50px;
+        }
+
+        .os {
+            padding: 15px;
+            background:#EFF4F9;
+            border-radius: 10px;
+
+            a {
+                padding: 10px 15px;
+                border-radius: 5px;
+                background: white;
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img style="margin-bottom: 10px;" src="update.svg" alt="апдейт">
+    <p>Ваша операционная система <span id="oswhat"></span> <span id="whatitupdate"></span></p>
+
+    <div class="os">
+        <p>Также попробуйте новый продукт!</p>
+        <a href="">Гооо!!!</a>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        let OS = params.get("os") || "noneos";
+
+        if (OS = 'LL') {
+            document.getElementById("oswhat").textContent = "Шиндовс LL";
+            document.getElementById("whatitupdate").textContent = "все еще поддерживается";
+            document.getElementById("whatitupdate").style.color = "#00C853";
+        };
+    </script>
+</body>
+</html>
