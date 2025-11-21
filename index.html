@@ -24,14 +24,15 @@
             padding: 15px;
             background:#EFF4F9;
             border-radius: 10px;
-
-            a {
-                padding: 10px 15px;
-                border-radius: 5px;
-                background: white;
-                text-decoration: none;
-            }
         }
+
+        .os a {
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: white;
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body>
@@ -47,7 +48,7 @@
         const params = new URLSearchParams(window.location.search);
         let OS = params.get("os") || "noneos";
 
-        if (OS = 'LL') {
+        if (OS == 'LL') {
             document.getElementById("oswhat").textContent = "Шиндовс LL";
             document.getElementById("whatitupdate").textContent = "все еще поддерживается";
             document.getElementById("whatitupdate").style.color = "#00C853";
