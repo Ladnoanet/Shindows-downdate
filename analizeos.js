@@ -21,6 +21,10 @@ if (OS === 'LL') {
     document.getElementById("oswhat").textContent = "Шиндовс хз";
     document.getElementById("whatitupdate").textContent = "все еще поддерживается";
     document.getElementById("whatitupdate").style.color = "#00C853";
+} else if (OS === 'ZV') {
+    document.getElementById("oswhat").textContent = "Шиндовс ЗаВисла";
+    document.getElementById("whatitupdate").textContent = "является пока демкой. соси.";
+    document.getElementById("whatitupdate").style.color = "#00C853";
 } else {
     document.getElementById("oswhat").textContent = "неизвестна";
     document.getElementById("whatitupdate").textContent = "и не может поддерживаться";
