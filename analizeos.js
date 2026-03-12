@@ -22,8 +22,12 @@ if (OS === 'LL') {
     document.getElementById("whatitupdate").textContent = "все еще поддерживается";
     document.getElementById("whatitupdate").style.color = "#00C853";
 } else if (OS === 'ZV') {
-    document.getElementById("oswhat").textContent = "Шиндовс ЗаВисла";
+    document.getElementById("oswhat").textContent = "Шиндовс заВисла";
     document.getElementById("whatitupdate").textContent = "является пока демкой. соси.";
+    document.getElementById("whatitupdate").style.color = "#00C853";
+} else if (OS === 'KSM') {
+    document.getElementById("oswhat").textContent = "Шиндовс Кирпич Семя";
+    document.getElementById("whatitupdate").textContent = "все еще поддерживается";
     document.getElementById("whatitupdate").style.color = "#00C853";
 } else {
     document.getElementById("oswhat").textContent = "неизвестна";
